@@ -39,19 +39,23 @@ export const Card1 = () => {
 const OurGoalsSection = () => {
     return (
         <>
-            <div className="max-w-8xl lg:px-20">
-                <div className="md:py-40 py-80 flex items-center ">
-                    <div className="bg-gray-100">
-                        <div className="flex flex-col items-center text-center space-y-6 py-4">
+        <div className="lg:py-0 lg:mt-0 md:mt-0 mt-[16rem]">  
+            <div className="max-w-8xl lg:px-20 bg-gray-100">
+                <div className="md:py-20 flex items-center">
+                    <div className="">
+                        <div className="flex flex-col items-center text-center space-y-2 md:py-4">
                             <h1 className="font-semibold text-4xl">
                                 Our Goals
                             </h1>
                             <p>Join us in making a difference through our donation campaigns.</p>
                         </div>
+                        <div className="lg:py-10 space-y-8">  
                         <Card1 />
                         <Card1 />
+                        </div>
                     </div>
                 </div>
+            </div>
             </div>
         </>
     )

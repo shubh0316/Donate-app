@@ -7,7 +7,7 @@ const HeroSection = () => {
     return (
         <div className="relative flex justify-end">
             {/* Image container */}
-            <div className="lg:w-[60%]  h-[40rem] relative ">
+            <div className="lg:w-[60%]  h-[41.5rem] relative ">
                 <Image src={HeroImage} alt="hero" />
             </div>
             <div className="absolute top-40 lg:top-0 lg:left-20 lg:w-[45%]  h-full flex  items-center">
