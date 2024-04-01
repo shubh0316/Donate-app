@@ -11,7 +11,7 @@ export const Card1 = () => {
                <div className="md:flex md:bg-opacity-0 bg-opacity-80 gap-20 justify-between ">
                   <Image src={card1} alt="image1" className="w-96 h-96" />
                   <div className="flex flex-col space-y-5">
-                     <h1 className="text-4xl leading-normal tracking-wider font-bold ">Aid for Gaza's Underpaid but Dedicated Doctors.</h1>
+                     <h1 className="text-4xl leading-normal tracking-wider font-bold ">Aid for Gaza&apos;s Underpaid but Dedicated Doctors.</h1>
                      <p className="text-gray-700 leading-7 text-md text-start ">
                      Join our donation campaign to support underpaid doctors in Gaza who are tirelessly helping the people amidst the conflict. Your donation ensures they continue their critical work in saving lives, providing essential care, and healing communities.
                      </p>
