@@ -78,7 +78,7 @@ export function LoginButton() {
       href="#contact"
       className="bg-red-600 text-white px-6 py-3"
     >
-      Donate Now 
+      Donate 
     </Link>
    
    </li>
@@ -118,7 +118,7 @@ export function DesktopNav() {
 
 function Navbar() {
   return (
-    <div className="max-w-8xl mx-auto px-10">
+    <div className="max-w-8xl px-10">
       <Container>  
       <MobileNav />
       <DesktopNav />
