@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import  {Arimo}  from "next/font/google";
 import "./globals.css";
 import Navbar from "./navbar";
+import Footer from "./footer";
 
 // const inter = Inter({ subsets: ["latin"] });
 
@@ -23,6 +24,7 @@ export default function RootLayout({
       <body className={arimo.className}>
       <Navbar />
         {children}</body>
+      <Footer />
     </html>
   );
 }
