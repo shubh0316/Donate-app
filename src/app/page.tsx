@@ -3,6 +3,7 @@ import Container from "./container";
 import HeroSection from "./HeroSection";
 import OurGoalsSection from "./OurGoalsSection";
 import OurProgress from "./OurProgress";
+import LiveUpdates from "./LiveUpdates";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
      <HeroSection />
      <OurGoalsSection />
      <OurProgress />
+     <LiveUpdates />
     </>
   );
 }
