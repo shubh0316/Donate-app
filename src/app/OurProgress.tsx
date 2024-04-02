@@ -5,11 +5,11 @@ import Image from "next/image";
 const OurProgress = () => {
     return (
         <>
-            <div className="max-w-8xl lg:p-20">
-                <div className="flex  justify-between">
+            <div className="max-w-8xl lg:p-20 md:p-4 p-2">
+                <div className="flex lg:flex-row items-center flex-col lg:justify-between">
 
-                    <h1 className="text-4xl font-semibold">Our Progress</h1>
-                    <p className="w-2/4 justify-end text-gray-700">Discover the impact of your generosity through real-time updates and detailed insights. See first-hand how your support is transforming the lives of children and doctors in Gaza, providing hope and vital assistance during this challenging time.
+                    <h1 className="text-4xl font-semibold text-center">Our Progress</h1>
+                    <p className="lg:w-2/4 justify-end text-gray-700 lg:text-left text-center">Discover the impact of your generosity through real-time updates and detailed insights. See first-hand how your support is transforming the lives of children and doctors in Gaza, providing hope and vital assistance during this challenging time.
                     </p>
                 </div>
                 <div className="max-w-6xl lg:px-[4rem]">   
