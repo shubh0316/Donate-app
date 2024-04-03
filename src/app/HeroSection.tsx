@@ -17,7 +17,7 @@ const HeroSection = () => {
                         <span className="underline underline-offset-1 decoration-8 decoration-yellow-500 ">  Aid Amidst Conflicts
                         </span>
                     </p>
-                    <div className="text-start text-gray-400 ">
+                    <div className="text-start text-gray-700 ">
                     Join us in providing vital support to children and underpaid doctors in Gaza, offering aid to those who are homeless, wounded, and in urgent need during the ongoing Palestine-Israel conflict. Your donations make a meaningful difference in saving lives and providing essential care.
                     </div>
 

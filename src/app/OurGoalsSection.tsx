@@ -14,7 +14,7 @@ export const Card1 = () => {
                     <Image src={card1} alt="image1" width={200} className="w-96 md:w-[96rem] h-96 " />
                     </div>
                     <div className="flex flex-col space-y-5">
-                        <h1 className="text-4xl leading-normal tracking-wider font-bold ">Aid for Gaza&apos;s Underpaid but Dedicated Doctors.</h1>
+                        <h1 className="text-3xl md:text-4xl lg:p-0 py-4 leading-normal tracking-wider font-bold ">Aid for Gaza&apos;s Underpaid but Dedicated Doctors.</h1>
                         <p className="text-gray-700 leading-7 text-md text-start ">
                             Join our donation campaign to support underpaid doctors in Gaza who are tirelessly helping the people amidst the conflict. Your donation ensures they continue their critical work in saving lives, providing essential care, and healing communities.
                         </p>
@@ -43,7 +43,7 @@ const OurGoalsSection = () => {
             <div className="max-w-8xl lg:px-20 bg-gray-100">
                 <div className="md:py-20 flex items-center">
                     <div className="">
-                        <div className="flex flex-col items-center text-center space-y-2 md:py-4">
+                        <div className="flex flex-col items-center text-center space-y-2 md:py-4 lg:mt-0 mt-20">
                             <h1 className="font-semibold text-4xl">
                                 Our Goals
                             </h1>
