@@ -1,47 +1,47 @@
 import React from "react";
 import Container from "./container";
 import logo from "@/assets/logo.png";
-
+import location from "@/assets/svg/Footer - Contact Us - Location Icon.svg";
+import email from "@/assets/svg/Footer - Contact Us - Email Icon.svg";
+import call from "@/assets/svg/Footer - Contact Us - Call Icon.svg";
 import Image from "next/image";
 import Link from "next/link";
-import { Facebook, Instagram, Mail, MapPin, PhoneCall, Twitter } from "lucide-react";
+import { Facebook, Instagram, Mail, MapPin, MapPinned, PhoneCall, Twitter } from "lucide-react";
 
 const Footer = () => {
     return (
         <>
            
-            <div id="contact" className="bg-gray-100 p-10 mt-10">
+            <div id="contact" className="bg-white p-10 mt-10">
                 <Container>
                     <div className="lg:ml-40">  
-                    <Image src={logo} alt={"icon"} height={150} width={150} />
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-y-20 md:gap-x-20 md:mb-4">
                         <div className="cols-span-3">
-                            <h1 className="text-black text-2xl">Logistics to keep you moving</h1>
+                        <Image src={logo} alt={"icon"} height={120} width={800} />
                         </div>
                         <div className="cols-span-1">
                             <div className="flex flex-col gap-6">
                                 <h1 className="text-xl font-semibold text-black">Quick Links</h1>
-                                <Link href="#about" className="text-black text-md">About</Link>
-                                <Link href="#services" className="text-black text-md">Our Services</Link>
-                                <Link href="#specialties" className="text-black text-md">Our Specialties</Link>
-                                <Link href="#choose" className="text-black text-md">Why Choose Us</Link>
+                                <Link href="#about" className="text-black text-md">Our Goals</Link>
+                                <Link href="#services" className="text-black text-md">Our Progress</Link>
+                                <Link href="#specialties" className="text-black text-md">Live Updates</Link>
                             </div>
                         </div>
                         <div className="cols-span-1">
                             <div className="flex flex-col gap-6">
-                                <h1 className="text-xl font-semibold text-black">Contact Us</h1>
+                                <h1 className="text-xl font-semibold text-black">Contact</h1>
                                 <div className="flex flex-row space-x-5">
-                                    <MapPin className="" />
+                                    <Image src={location} alt={location} height={24} width={24} />
                                     <Link href="" className="text-black text-md">6415 Northwest Dr.  Unit 17 & 18
 Mississauga, ON  L4V 1X1</Link>
                                 </div>
                                 <div className="flex flex-row space-x-5">
-                                    <PhoneCall />
-                                    <Link href="" className="text-black text-md">+1-833-562-3375</Link>
+                                    <Image src={call} alt={call} height={24} width={24} />
+                                    <Link href="" className="text-black text-md ">+1111111111</Link>
                                 </div>
                                 <div className="flex flex-row space-x-5">
-                                    <Mail />
-                                    <Link href="" className="text-black text-md">info@freightstarts.com</Link>
+                                    <Image src={email} alt={email} height={24} width={24} />
+                                    <Link href="" className="text-black lg:text-md text-sm">info@freightstarts.com</Link>
                                 </div>
                             </div>
                         </div>
@@ -50,7 +50,7 @@ Mississauga, ON  L4V 1X1</Link>
                             <div className="flex flex-col gap-6">
                                 <div className="flex flex-row gap-6">
                                     <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-                                        <Twitter />
+                                        <Twitter className="yellow-500" />
                                     </a>
                                     <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
                                         <Facebook />
@@ -67,7 +67,7 @@ Mississauga, ON  L4V 1X1</Link>
                     <div className="md:border-t-2 w-[90%] items-center md:border-black mt-8 my-6" />
 
 <div className="text-black text-center">
-    <p className="text-md">Copyright © 2023 | Freight Starts Ltd.</p>
+    <p className="text-md">Copyright © 2023 | Doctors Within Borders.</p>
 </div>
 </div>
                 </Container>

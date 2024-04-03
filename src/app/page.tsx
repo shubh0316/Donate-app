@@ -4,6 +4,7 @@ import HeroSection from "./HeroSection";
 import OurGoalsSection from "./OurGoalsSection";
 import OurProgress from "./OurProgress";
 import LiveUpdates from "./LiveUpdates";
+import CTASection from "./CTASection";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
      <OurGoalsSection />
      <OurProgress />
      <LiveUpdates />
+     <CTASection />
     </>
   );
 }
