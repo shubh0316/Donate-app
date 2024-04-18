@@ -5,18 +5,20 @@ import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 
 
+
 export const Card1 = () => {
-    return (
+
+     return (
         <>
             <div>
                 <Image src={background} alt="hello" className='' />
             </div>
             <div className="bg-white relative md:bottom-20 md:left-10 p-4">
                 <div className="flex flex-col space-y-4 text-black px-2 ">
-                    <h1 className="text-start font-semibold text-3xl underline underline-offset-1 decoration-8 decoration-yellow-500  ">WSCNF</h1>
+                    <h1 className="text-start font-semibold text-3xl ">WSCNF</h1>
                     <p className="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna . </p>
                     <div className="flex space-x-4">
-                        <Link href={""} className="text-md font-semibold"> Read More   </Link>
+                        <Link href="/liveupdate" className="text-md font-semibold"> Read More   </Link>
                         <ArrowRight />
                     </div>
                 </div>
