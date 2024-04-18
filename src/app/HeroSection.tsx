@@ -1,38 +1,30 @@
 import React from "react";
-import HeroImage from "@/assets/heroImage.png";
+import HeroImage from "@/assets/HeroImage2.png";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 
 const HeroSection = () => {
-    return (
-        <div className="relative flex justify-end">
-            {/* Image container */}
-            <div className="lg:w-[60%]  h-[41.5rem] relative ">
-                <Image src={HeroImage} alt="hero" />
-            </div>
-            <div className="absolute top-40 lg:top-0 lg:left-20 lg:w-[45%]  h-full flex  items-center">
-                <div className="bg-white  p-8  space-y-8">
-                    <p className="space-y-4 leading-tight font-bold text-6xl relative">
-                        Supporting Children and Doctors in Gaza:
-                        <span className="underline underline-offset-1 decoration-8 decoration-yellow-500 ">  Aid Amidst Conflicts
-                        </span>
-                    </p>
-                    <div className="text-start text-gray-700 ">
-                    Join us in providing vital support to children and underpaid doctors in Gaza, offering aid to those who are homeless, wounded, and in urgent need during the ongoing Palestine-Israel conflict. Your donations make a meaningful difference in saving lives and providing essential care.
-                    </div>
-
-
-
-                     
-                    <button className="flex gap-4 bg-yellow-500 px-6 py-2 text-black font-semibold">Support Them Now 
-                    <ArrowRight />
-                    </button>
-           
-                </div>
-            </div>
-
+  return (
+    <div className="flex md:flex-row-reverse  md:py-20 py-4 px-4 md:px-0 md:pl-6 flex-col-reverse">
+      <div className="w-full p-2 md:p-0 ">
+        <Image src={HeroImage} alt="hero" className="w-full md:pl-20" />
+      </div>
+      {/*  */}
+      <div className="">
+        <div className=" md:pl-20 md:py-32 md:pr-4">
+          <p className="space-y-4 leading-tight font-bold text-6xl ">
+            Supporting Children and Doctors in Gaza
+            <span className="underline underline-offset-1 decoration-8 decoration-yellow-500 ">
+            </span>
+          </p>
+          <button className="flex gap-6 bg-yellow-500 px-6 py-2 text-black font-semibold">
+            Support Them Now
+            <ArrowRight />
+          </button>
         </div>
-    );
+      </div>
+    </div>
+  );
 };
 
 export default HeroSection;

@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const LoginPage = () => {
   return (
-    <div className="flex flex-col-reverse md:flex-row px-8">
+    <div className="flex flex-col-reverse md:flex-row px-8 md:pt-12">
       <div className="img md:w-[60%]">
         <Image
           src={LoginHeaderImage}

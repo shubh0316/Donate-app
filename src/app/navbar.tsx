@@ -7,7 +7,6 @@ import Link from "next/link";
 import Container from "./container";
 import { ArrowRight } from "lucide-react";
 
-
 const navlinks = [
   { title: "Our Goals", destination: "#about" },
   { title: "Our Progress", destination: "#services" },
@@ -39,14 +38,12 @@ export function MobileNav() {
   return (
     <>
       <div className="flex py-4 items-baseline relative sm:hidden">
-       
         <figure className="mx-auto">
           <Image
             src={logoImg}
             className="object-contain"
             alt="logo"
             height={40}
-
             quality={100}
           />
         </figure>
@@ -65,25 +62,21 @@ export function MobileNav() {
 
 export function LoginButton() {
   return (
-    <>      
-    <ul>  
-    <li>  
-    <Link
-     href="login"
-     className= "px-6 py-1 rounded-full text-sm transition-all ease-in-out hover:scale-110 hover:text-orange-600"
-   >
-    Login
-   </Link>
-    <Link
-      href="#contact"
-      className="bg-red-600 text-white px-6 py-3"
-    >
-      Donate 
-    </Link>
-   
-   </li>
-   </ul>
-   </>
+    <>
+      <ul>
+        <li>
+          <Link
+            href="/login"
+            className="px-6 py-1 rounded-full text-sm transition-all ease-in-out hover:scale-110 hover:text-orange-600"
+          >
+            Login
+          </Link>
+          <Link href="#contact" className="bg-red-600 text-white px-6 py-3">
+            Donate
+          </Link>
+        </li>
+      </ul>
+    </>
   );
 }
 
@@ -91,13 +84,15 @@ export function DesktopNav() {
   return (
     <div className="py-4 items-center justify-between relative hidden sm:flex">
       <figure>
-        <Image
-          src={logoImg}
-          className="object-contain p-1"
-          alt="logo"
-          height={34}
-          quality={100}
-        />
+        <Link href={"/"}>
+          <Image
+            src={logoImg}
+            className="object-contain p-1"
+            alt="logo"
+            height={34}
+            quality={100}
+          />
+        </Link>
       </figure>
       <ul className="flex space-x-6">
         {navlinks.map((link) => (
@@ -119,9 +114,9 @@ export function DesktopNav() {
 function Navbar() {
   return (
     <div className="max-w-8xl px-10">
-      <Container>  
-      <MobileNav />
-      <DesktopNav />
+      <Container>
+        <MobileNav />
+        <DesktopNav />
       </Container>
     </div>
   );
