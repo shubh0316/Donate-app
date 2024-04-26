@@ -11,7 +11,7 @@ export const Card1 = () => {
      return (
         <>
             <div>
-                <Image src={background} alt="hello" className='' />
+                <Image src={background} alt="hello" className='p-4' />
             </div>
             <div className="bg-white relative md:bottom-20 md:left-10 p-4">
                 <div className="flex flex-col space-y-4 text-black px-2 ">
