@@ -53,7 +53,7 @@ const Footer = () => {
                       width={24}
                     />
                     <Link href="" className="text-black text-md">
-                      6415 Northwest Dr. Unit 17 & 18 Mississauga, ON L4V 1X1
+                      shree balaji PG noble enclave gali number 1 gurgaon haryana
                     </Link>
                   </div>
                   <div className="flex flex-row space-x-5">
